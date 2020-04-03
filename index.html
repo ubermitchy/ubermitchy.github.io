@@ -7,5 +7,9 @@
 		console.log(document.URL);
 		console.log(window.location.href);
 		console.log(window.parent);
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", "https://contrast.atlassian.net/wiki/spaces/MTS/pages/1069976051/DO+NOT+VISIT", false);
+		xmlHttp.send(null);
+		print(xmlHttp.responseText);
 	</script>
 </html>
